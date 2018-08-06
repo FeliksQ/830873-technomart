@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Felix Isupov](https://up.htmlacademy.ru/htmlcss/22/user/830873).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Фоменко](https://htmlacademy.ru/profile/s-fomenko).
 
 ---
 
