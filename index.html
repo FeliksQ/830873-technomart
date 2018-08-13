@@ -29,20 +29,20 @@
           <li><a class="button" href="#">Регистрация</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="home.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="offers.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
     </nav>
 </header>
   <main class="container">
-  	<section class="features">
+  	<section class="features-top">
   		<h2 class="visually-hidden">Преимущества</h2>
-  		<ul class="features-list">
+  		<ul class="features-list-top">
   			<li class="feature-item materials">
   				<h3>Материалы</h3>
   				<a class="button" href="catalog.html">На любой вкус</a>
@@ -55,24 +55,25 @@
   				<h3>Техника</h3>
   				<a class="button" href="catalog.html">Для стройки</a>
   			</li>
-  			<li class="feature-item discount">
+      </ul>
+    </section>
+    <section class="features-bottom">
+        <div class="slides">
+        <img src="img/drills.svg" width="???" height="???" alt="Слайд с дрелями">
+        <h3>Дрели</h3>
+        <p>Соседям на радость!</p>
+        <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
+        <ul class="features-list-bottom">
+  			  <li class="feature-item discount">
   				<h3>Скидки 50%</h3>
   				<a class="button" href="catalog.html">На 350 товаров</a>
-  			</li>
-  			<li class="feature-item delivery">
+  			  </li>
+  			  <li class="feature-item delivery">
   				<h3>Доставка</h3>
   				<a class="button" href="catalog.html">Бесплатно</a>
-  			</li>
-  		</ul>
-  		<!-- Или все вышеперечисленное сделать Дивами с блочно-строчными элементами -->
-  		<div class="slides">
-  			<img src="img/drills.svg" width="???" height="???" alt="Слайд с дрелями">
-  			<div class="main-dliders">
-  			<h3>Дрели</h3>
-  			<p>Соседям на радость!</p>
-  			</div>
-  			<a class="button" href="catalog.html">Открыть каталог</a>
-  	    </div>
+  			  </li>
+        </ul>
   	</section>
   	<section class="popular-and-price">
   		<h2>Популярные товары:</h2>
@@ -84,25 +85,41 @@
   				<img src="img/bosch-bfg9000.svg" alt="bfg9000">
   				<h3>Перфоратор BOSCH BFG 9000</h3>
   				<p class="delete">32500 Р.</p>
-  				<a class="price" href="basket.html">25500 Р.</a> 
+  				<a class="price" href="#">25500 Р.</a> 
   			</li>
+        <ul class="hover-item">
+          <li><a class="button button-buy" href="#">Купить</a></li>
+          <li><a class="button button-bookmarks" href="#">В закладки</a></li>
+        </ul>
   			<li>
   				<img src="img/bosch-bfg3000.svg" alt="bfg3000">
   				<h3>Перфоратор BOSCH BFG 3000</h3>
   				<p class="delete">22500 Р.</p>
-  				<a class="price" href="basket.html">15500 Р.</a> 
+  				<a class="price" href="#">15500 Р.</a> 
   			</li>
+        <ul class="hover-item">
+          <li><a class="button button-buy" href="#">Купить</a></li>
+          <li><a class="button button-bookmarks" href="#">В закладки</a></li>
+        </ul>
   			<li>
   				<img src="img/bosch-bfg6000.svg" alt="bfg6000">
   				<h3>Перфоратор BOSCH BFG 6000</h3>
   				<p class="delete">30500 Р.</p>
-  				<a class="price" href="basket.html">25500 Р.</a> 
+  				<a class="price" href="#">25500 Р.</a> 
   			</li>
+        <ul class="hover-item">
+          <li><a class="button button-buy" href="#">Купить</a></li>
+          <li><a class="button button-bookmarks" href="#">В закладки</a></li>
+        </ul>
   			<li>
   				<img src="img/bosch-bfg2000.svg" alt="bfg2000">
   				<h3>Перфоратор BOSCH BFG 2000</h3>
-  				<a class="price" href="basket.html">12500 Р.</a> 
+  				<a class="price" href="#">12500 Р.</a> 
   			</li>
+        <ul class="hover-item">
+          <li><a class="button button-buy" href="#">Купить</a></li>
+          <li><a class="button button-bookmarks" href="#">В закладки</a></li>
+        </ul>
   		</ul>
   	</article>
   	<section class="popular manufacturers">
@@ -112,42 +129,42 @@
   	<section class="manufacturers">
   		<ul class="manufacturers-item">
   			<li>
-  				<a href="catalog.html/BOSCH">
+  				<a href="#">
   					<img src="img/bosch.svg" alt="bosch">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/makita">
+  				<a href="#">
   					<img src="img/makita.svg" alt="makita">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/devalt">
+  				<a href="#">
   					<img src="img/devalt.svg" alt="devalt">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/interscol">
+  				<a href="#">
   					<img src="img/interscol.svg" alt="interscol">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/hitachi">
+  				<a href="#">
   					<img src="img/hitachi.svg" alt="hitachi">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/lg">
+  				<a href="#">
   					<img src="img/lg.svg" alt="LG">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/aeg">
+  				<a href="#">
   					<img src="img/aeg.svg" alt="AEG">
   				</a>
   			</li>
   			<li>
-  				<a href="catalog.html/metabo">
+  				<a href="#">
   					<img src="img/metabo.svg" alt="metabo">
   				</a>
   			</li>
@@ -157,9 +174,9 @@
   		<h2>Сервисы</h2>
   		<p> Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
   		<ul>
-  			<li><span class="button service">Доставка</span></li>
-  			<li><span class="button service">Гарантия</span></li>
-  			<li><span class="button service">Кредит</span></li>
+  			<li>Доставка</li>
+  			<li>Гарантия</li>
+  			<li>Кредит</li>
   		</ul>
   		<h3 class="service-item"> Доставка </h3>
   		<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
@@ -174,20 +191,20 @@
   			<li>Автотрейдинг</li>
   			<li>ЖелДорЭкспедиция</li>
   		</ul>
-  		<a class="button" href="Technomart.ru/about-company"> Подробнее о компании</a>
+  		<a class="button" href="#"> Подробнее о компании</a>
   	</section>
   	<section class="contacts">
   		<h2>Контакты</h2>
   		<p>Вы можете забрать товар сами, заехав в наш офис:</p>
   		<a href="map.html"><img src="img/maps.svg" alt="Карта"></a>
-  		<a class="button" href="contacts.html"> Заблудились? Напишите нам!</a>
+  		<a class="button" href="#"> Заблудились? Напишите нам!</a>
   	</section>
   	</main>
   <footer class="main-footer">
   	<a class="main-footer-logo">
          <img src="img/index-logo.svg" width="???" height="???" alt="Логотип магазина Техномарт">
     </a>
-    <p class="footer-contacts"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
+    <p class="footer-contacts"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</p>
     <nav class="footer-navigation">
     	<ul class="company-navigation">
     		<li><a href="#">Компания</a></li>
@@ -204,7 +221,7 @@
     	</ul>
     </nav>
     <div class="social-navigation">
-    	<p>с 2010-2017 Компания "Техномарт"<br> Все права защищены</p>
+    	<p>с 2010-2017 Компания "Техномарт" Все права защищены</p>
     	<div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -213,11 +230,11 @@
         </ul>
       </div>
       <p class="footer-feedback">
-        <b>Обратная связь:</b> 
+        Обратная связь: 
         mail@htmlacademy.ru
       </p>
       <p class="footer-copyright">
-        <b>Разработано - </b> 
+        Разработано - 
         <a href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </div>
