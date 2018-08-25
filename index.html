@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
   	<nav class="main-navigation">
   		<a class="main-header-logo">
-        <div class="logo-block">
           <span>Техномарт</span>
-        </div>
         </a>
         <div class="upper-block">
-        <form class="search-box" action="https://echo.htmlacademy.ru" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <label for="search"><img src="img/icon-search.svg" alt="Значок поиска">
-          <input type="search" id="search" name="search" placeholder="Поиск:"> 
+          <input class="search-box" type="search" id="search" name="search" placeholder="Поиск:"> 
           </label>
         </form>
         <a href="#" aria-label="bookmarks">Закладки:0</a>
         <a href="#" aria-label="basket">Корзина:0</a>
-        <a class="button" href="#" aria-label="order button">Оформить заказ</a>
+        <div class="checkout">
+        <a href="#" aria-label="order button">Оформить заказ</a>
         </div>
+      </div>
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <a class="contact-number" href="tel:+78125550555">+7(812)555-05-55</a>
         <p class="header-contacts adress">
@@ -29,7 +33,7 @@
         </p>
 
         <ul class="user-navigation">
-          <li><img src="icon-login.svg" alt="Значок входа"><a class="button" href="#" aria-label="enter your account">Войти</a></li>
+          <li><a class="button" href="#" aria-label="enter your account">Войти</a></li>
           <li><a class="button" href="#" aria-label="Register your account">Регистрация</a></li>
         </ul> 
         <ul class="site-navigation">
@@ -55,7 +59,7 @@
   				<h3>Инструменты</h3>
   				<a class="button" href="catalog.html" aria-label="go to the catalog with tools">На все случаи</a>
   			</li>
-  			<li class="feature-item tech">
+  			<li class="feature-item equipment">
   				<h3>Техника</h3>
   				<a class="button" href="catalog.html" aria-label="go to the catalog with machinery">Для стройки</a>
   			</li>
@@ -87,7 +91,7 @@
           </li>
         </ul>
         <a class="button" href="catalog.html" aria-label="go to product catalog">Открыть каталог</a>
-        </section>
+
         <ul class="features-list-bottom">
   			  <li class="feature-item discount">
   				<h3>Скидки 50%</h3>
@@ -147,7 +151,7 @@
         </li>
   		</ul>
   	</article>
-  	<section class="popular manufacturers">
+  	<section class="popular-manufacturers">
   		<h2>Популярные производители:</h2>
   		<a class="button" href="catalog.html"> Все производители</a>
   	</section>
@@ -155,7 +159,7 @@
   		<ul class="manufacturers-item">
   			<li>
   				<a href="#" aria-label="go to goods with a manufacturer of bosch">
-  					<img src="img/bosch-logo.jpg" alt="bosch">
+  				<img src="img/bosch-logo.jpg" alt="bosch">
   				</a>
   			</li>
   			<li>
@@ -205,17 +209,17 @@
       </ul>
       <section class="right-block">
           <div class="truck">
-            <h3 class="service-item"> Доставка </h3>
+            <h3> Доставка </h3>
       <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           </div>
-          <div class="uarantee100%">
-            <h3 class="service-item"> Гарантия </h3>
+          <div class="uarantee100">
+            <h3> Гарантия </h3>
             <p>
               Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как нибудь сами.
             </p>
           </div>
           <div class="credit">
-            <h3 class="service-item"> Кредит </h3>
+            <h3> Кредит </h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
             </p>
@@ -223,7 +227,8 @@
           </div>
       </section>
   	</section>
-  	<section class="about-company">
+    <section class="about-company">
+  	<section class="transport-companies">
   		<h2>Компания "Техномарт"</h2>
   		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
   		<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -237,14 +242,16 @@
   	<section class="contacts">
   		<h2>Контакты</h2>
   		<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-  		<a href="map.html" aria-label="open the map in full growth"><img src="img/little-map.jpg" alt="Карта"></a>
-  		<p><a class="button" href="#" aria-label="send us a letter"> Заблудились? Напишите нам!</a></p>
+  		<a class="mini-map" href="map.html" aria-label="open the map in full growth"><img src="img/little-map.jpg" alt="Карта"></a>
+  		<a class="button" href="#" aria-label="send us a letter"> Заблудились? Напишите нам!</a>
   	</section>
+    </section>
   	</main>
  <footer class="main-footer">
-    <a class="main-footer-logo">
-         <img src="img/tehnomart-logo.png" alt="Логотип магазина Техномарт">
-    </a>
+  <div class="top-footer">
+   <a class="main-header-logo">
+          <span>Техномарт</span>
+        </a>
     <p class="footer-contacts"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7(812)555-05-55</p>
     <nav class="footer-navigation">
       <ul class="company-navigation">
@@ -261,23 +268,24 @@
         <li><a href="#" aria-label="special offers section">Спецпредложения</a></li>
       </ul>
     </nav>
+  </div>
     <div class="social-navigation">
       <p>с 2010-2017 Компания "Техномарт" Все права защищены</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#" aria-label="go to the vkontakte group">Вконтакте</a></li>
-          <li><a class="social-button" href="#" aria-label="go to group in facebook">Фейсбук</a></li>
-          <li><a class="social-button" href="#" aria-label="go to instagrams">Инстаграм</a></li>
+        <ul class="footer-social">
+          <li class="social-button vk"><a href="#" aria-label="go to the vkontakte group">Вконтакте</a></li>
+          <li class="social-button fb"><a href="#" aria-label="go to group in facebook">Фесбук</a></li>
+          <li class="social-button insta"><a href="#" aria-label="go to instagrams">Инстаграмм</a></li>
         </ul>
-      </div>
+      <div class="footer-bottom">
       <p class="footer-feedback">
         Обратная связь: 
-        mail@htmlacademy.ru
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
         Разработано - 
         <a href="https://htmlacademy.ru" aria-label="developer">HTML Academy</a>
       </p>
+      </div>
     </div>
 </footer>
 <section class="Contact-Us">
@@ -288,9 +296,9 @@
         <p><label for="email">Ваш e-mail:</label>
         <input type="email" name="email" id="email" placeholder="email@example.com"></p>
         <p><label for="text-of-appeal">Текст письма:</label>
-        <textarea id="text-of-appeal" name="text" rows="4" placeholder="В свободной форме"></textarea></p>
+        <textarea id="text-of-appeal" name="text" rows="5" placeholder="В свободной форме"></textarea></p>
         <div class="button">
-        <button class="button" type="submit">Отправить</button>
+        <button type="submit">Отправить</button>
         </div>
       </form>
 </section>

@@ -3,35 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title> Каталог "Техномарта </title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   	<nav class="main-navigation">
-  		<a class="main-header-logo">
-          <div class="logo-block">
+          <a class="main-header-logo" href="index.html">
           <span>Техномарт</span>
-        </div>
         </a>
-        <div class="upper block">
-        <form class="search box">
+        <div class="upper-block">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <label for="search"><img src="img/icon-search.svg" alt="Значок поиска">
-          <input type="search" id="search" name="search" placeholder="Поиск:"> 
+          <input class="search-box" type="search" id="search" name="search" placeholder="Поиск:"> 
           </label>
         </form>
         <a href="#" aria-label="bookmarks">Закладки:0</a>
         <a href="#" aria-label="basket">Корзина:10</a>
-        <a class="button" href="#" aria-label="order button">Оформить заказ</a>
+        <div class="checkout">
+        <a href="#" aria-label="order button">Оформить заказ</a>
         </div>
+      </div>
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <a class="contact-number" href="tel:+78125550555">+7(812)555-05-55</a>
         <p class="header-contacts adress">
         		г. Санкт-Петербург,ул.Б.Конюшенная,д.19/8
         </p>
         <div class="Personal-office">
-        	<p>Равшан Джамшутович</p>
+        	<span>Равшан Джамшутович</span>
         	<button type="reset"><img src="img/icon-logout.svg" alt="Значок выхода"></button>
         </div>
-        <ul class="user-navigation">
+        <ul class="Personal-navigation">
           <li><a class="button" href="#" aria-label="My orders">Мои заказы</a></li>
           <li><a class="button" href="#" aria-label="Personal Area">Личный кабинет</a></li>
         </ul>
@@ -57,7 +61,9 @@
         <li><a href="#" aria-label="go to tools">Инструменты</a></li>
         <li>Перфораторы</li>
       </ul>
-    <h1>Перфораторы</h1>
+    <section class="h2-perforators">
+    <h2>Перфораторы</h2>
+</section>
     <section class="filters">
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         	<h2>Фильтр:</h2>
@@ -69,12 +75,12 @@
         			<div class="moving-element"></div>
         		</div>
         		<section class="range-price">
-        		<label for="filter-price">
-        			<input type="text" id="filter-price" name="filter-price" placeholder="0">
+        		<label for="filter-price-min">
+        			<input type="text" id="filter-price-min" name="filter-price-min" placeholder="0">
         		</label>
         		-
-        		<label for="filter-price">
-        			<input type="text" id="filter-price" name="filter-price" placeholder="30000">
+        		<label for="filter-price-max">
+        			<input type="text" id="filter-price-max" name="filter-price-max" placeholder="30000">
         		</label>
         	</section>
         	<section class="range-price output-area">
@@ -125,17 +131,17 @@
     <nav class="sorting">
     	<p>Сортировка:</p>
     	<ul class="sorting-by">
-    		<li class="Highlighted by color"><a href="#" aria-label="sort by price">По цене</a></li>
+    		<li><a  href="#" aria-label="sort by price" checked>По цене</a></li>
     		<li><a href="#" aria-label="sort by type">По типу</a></li>
     		<li><a href="#" aria-label="sort by functionality">По функционалу</a></li>
     		<li>
 			<a href="#" aria-label="button up">
-				<img src="img/icon-up-dir.svg" alt="Стрелка вверх">
+				<img src="img/icon-up-dir.png" alt="Стрелка вверх">
 			</a>
 		    </li>
 		    <li>
 			<a href="#" aria-label="button down">
-				<img src="img/icon-down-dir.svg" alt="Стрелка вниз">
+				<img src="img/icon-down-dir.png" alt="Стрелка вниз">
 			</a>
 		    </li>
     	</ul>
@@ -247,43 +253,45 @@
   		ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
   	</section>
 </main>
-<footer class="main-footer">
-  	<a class="main-footer-logo" href="index.html" aria-label="go to main page">
-         <img src="img/tehnomart-logo.png" alt="Логотип магазина Техномарт">
-    </a>
+ <footer class="main-footer">
+  <div class="top-footer">
+   <a class="main-header-logo" href="index.html">
+          <span>Техномарт</span>
+        </a>
     <p class="footer-contacts"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7(812)555-05-55</p>
     <nav class="footer-navigation">
-    	<ul class="company-navigation">
-    		<li><a href="#" aria-label="about company">Компания</a></li>
-    		<li><a href="#" aria-label="company's news">Новости</a></li>
-    		<li><a href="#" aria-label="company catalog">Каталог</a></li>
-    		<li><a href="#" aria-label="delivery">Доставка</a></li>
-    		<li><a href="#" aria-label="contacts of the company">Контакты</a></li>
-    	</ul>
-    	<ul class="catalog-navigation">
-    		<li><a href="#" aria-label="section materials">Материалы</a></li>
-    		<li><a href="#" aria-label="technology section">Техника</a></li>
-    		<li><a href="#" aria-label="section tools">Инструменты</a></li>
-    		<li><a href="#" aria-label="special offers section">Спецпредложения</a></li>
-    	</ul>
+      <ul class="company-navigation">
+        <li><a href="#" aria-label="about company">Компания</a></li>
+        <li><a href="#" aria-label="company's news">Новости</a></li>
+        <li><a href="#" aria-label="company catalog">Каталог</a></li>
+        <li><a href="#" aria-label="delivery">Доставка</a></li>
+        <li><a href="#" aria-label="contacts of the company">Контакты</a></li>
+      </ul>
+      <ul class="catalog-navigation">
+        <li><a href="#" aria-label="section materials">Материалы</a></li>
+        <li><a href="#" aria-label="technology section">Техника</a></li>
+        <li><a href="#" aria-label="section tools">Инструменты</a></li>
+        <li><a href="#" aria-label="special offers section">Спецпредложения</a></li>
+      </ul>
     </nav>
+  </div>
     <div class="social-navigation">
-    	<p>с 2010-2017 Компания "Техномарт" Все права защищены</p>
-    	<div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#" aria-label="go to the vkontakte group">Вконтакте</a></li>
-          <li><a class="social-button" href="#" aria-label="go to group in facebook">Фейсбук</a></li>
-          <li><a class="social-button" href="#" aria-label="go to instagrams">Инстаграм</a></li>
+      <p>с 2010-2017 Компания "Техномарт" Все права защищены</p>
+        <ul class="footer-social">
+          <li class="social-button vk"><a href="#" aria-label="go to the vkontakte group">Вконтакте</a></li>
+          <li class="social-button fb"><a href="#" aria-label="go to group in facebook">Фесбук</a></li>
+          <li class="social-button insta"><a href="#" aria-label="go to instagrams">Инстаграмм</a></li>
         </ul>
-      </div>
+      <div class="footer-bottom">
       <p class="footer-feedback">
         Обратная связь: 
-        mail@htmlacademy.ru
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
         Разработано - 
         <a href="https://htmlacademy.ru" aria-label="developer">HTML Academy</a>
       </p>
+      </div>
     </div>
 </footer>
 </body>
