@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
-  	<nav class="main-navigation">
+  	<section class="main-navigation">
       <div class="container-and-logo">
         <div class="container-logo">
           <a class="main-header-logo">
@@ -20,27 +20,25 @@
         <div class="upper-block">
         <form action="https://echo.htmlacademy.ru" method="get">
           <label for="search"><span class="visually-hidden">Поиск</span>
-          <input class="search-box" type="search" id="search" name="search" placeholder="Поиск:"> 
+          <input class="search-box" type="text" id="search" name="search" placeholder="Поиск:"> 
           </label>
         </form>
-        <a  href="#" aria-label="bookmarks">Закладки: 0</a>
-        <a  href="#" aria-label="basket">Корзина: 0</a>
-        <div class="checkout">
+        <a class="bookmarks" href="#" aria-label="bookmarks">Закладки: 0</a>
+        <a class="basket" href="#" aria-label="basket">Корзина: 10</a>
         <a class="checkout" href="#" aria-label="order button">Оформить заказ</a>
-        </div>
         </div>
       </div>
       <div class="initial-block">
         <h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
-        <div class="container">
-        <a class="contact-number" href="tel:+78125550555">+7(812)555-05-55</a>
+        <div class="container-header">
+        <a class="contact-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="header-contacts adress">
         		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
       </div>
         <ul class="user-navigation">
-          <li><a class="button enter" href="#" aria-label="enter your account">Войти</a></li>
-          <li><a class="button register" href="#" aria-label="Register your account">Регистрация</a></li>
+          <li class="button enter"><a  href="#" aria-label="enter your account">Войти</a></li>
+          <li class="button register"><a  href="#" aria-label="Register your account">Регистрация</a></li>
         </ul> 
        </div>
         <ul class="site-navigation">
@@ -52,18 +50,19 @@
           <li><a href="#" aria-label="delivery">Доставка</a></li>
           <li><a href="#" aria-label="contacts of the company">Контакты</a></li>
         </ul>
-    </nav>
+    </section>
 </header>
   <main class="container">
   	<section class="features-top">
   		<h2 class="visually-hidden">Преимущества</h2>
   		<ul class="features-list-top">
   			<li class="feature-item materials">
+          <div class="flag flag-new">новинка</div>
   				<h3>Материалы</h3>
   				<a class="button" href="catalog.html" aria-label="go to the catalog with materials">На любой вкус</a>
   			</li>
   			<li class="feature-item instruments">
-  				<h3>Инструменты</h3>
+  				<h3>Инструмент</h3>
   				<a class="button" href="catalog.html" aria-label="go to the catalog with tools">На все случаи</a>
   			</li>
   			<li class="feature-item equipment">
@@ -81,7 +80,7 @@
         <li><button class="next-slide"><img src="img/icon-right.svg" alt="next-slide"></button></li>
         </ul>
           <ul class="slides-switches">
-          <li class="open-catalog"><a class="button" href="catalog.html" aria-label="go to product catalog">Открыть каталог</a></li>
+          <li><a class="button" href="catalog.html" aria-label="go to product catalog">Открыть каталог</a></li>
           <li class="slide-radio">
             <button class="slide-btn">
               РАЗ
@@ -114,7 +113,7 @@
   		<h2>Популярные товары:</h2>
   		<a class="button" href="catalog.html" aria-label="go to popular products section"> Все популярные товары</a>
   	</section>
-  	<article class="popular-items">
+  	<section class="popular-items">
   		<ul class="catalog-items">
   			<li class="catalog-item">
           <div class="hover-item">
@@ -163,7 +162,7 @@
           <p class="price">12500 Р.</p>
         </li>
   		</ul>
-  	</article>
+  	</section>
   	<section class="popular-manufacturers">
   		<h2>Популярные производители:</h2>
   		<a class="button" href="catalog.html"> Все производители</a>
@@ -282,14 +281,14 @@
       <ul class="catalog-navigation">
         <li><a href="#" aria-label="section materials">Материалы</a></li>
         <li><a href="#" aria-label="technology section">Техника</a></li>
-        <li><a href="#" aria-label="section tools">Инструменты</a></li>
+        <li><a href="#" aria-label="section tools">Инструмент</a></li>
         <li><a href="#" aria-label="special offers section">Спецпредложения</a></li>
       </ul>
     </nav>
   </div>
   <section class="bottom-footer">
     <div class="social-navigation">
-      <p>с 2010-2017 Компания "Техномарт" Все права защищены</p>
+      <p>© 2010-2017 Компания «Техномарт»<br> Все права защищены</p>
         <ul class="footer-social">
           <li class="social-button vk"><a href="#" aria-label="go to the vkontakte group"><span class="visually-hidden">Вконтакте</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg></a></li>
@@ -304,8 +303,8 @@
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
-        Разработано - 
-        <a href="https://htmlacademy.ru" aria-label="developer">HTML Academy</a>
+        Разработано — 
+        <a href="https://htmlacademy.ru" aria-label="developer">htmlacademy.ru</a>
       </p>
       </div>
     </div>
