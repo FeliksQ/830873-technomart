@@ -2597,7 +2597,7 @@ padding: 0;
   font-weight: 400;
   color: #000000;
   text-transform: none;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
 
 
   background-color: #ffffff;
@@ -2735,4 +2735,137 @@ padding: 0;
 .top-form p {
   margin: 0;
   padding: 0;
+}
+
+.modal-map {
+  position: fixed;
+  top: 140px;
+  right: 253px;
+  width: 940px;
+  height: 446px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-map p {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-basket-hover {
+  position: fixed;
+  top: 140px;
+  left: 50%;
+  
+  margin-left: -310px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: none;
+  box-shadow: 20px 0 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+
+  background-color: #ffffff;
+  display: none;
+}
+
+.catalog-basket-hover h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: none;
+  padding:0;
+  margin: 0;
+}
+
+.catalog-basket-hover img {
+  padding:0;
+  margin: 0;
+}
+
+.catalog-basket-hover .pink-flore {
+  min-height: 7px;
+  background-color: #ff5357;
+}
+
+.catalog-basket-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  width: 414px;
+  padding: 55px 125px 49px 81px;
+}
+
+.catalog-basket-hover .button-basket {
+  margin: 0;
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.button-basket .checkout-basket {
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 61px 10px 58px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 3px;
+
+  background-color: #ee3643;
+}
+
+.button-basket .continue-shopping {
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px 47px 10px 43px;
+  border: none;
+  border-radius: 3px;
+
+  background-color: #ffffff;
+}
+
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: 0px;
+
+  width: 22px;
+  height: 3px;
+
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
