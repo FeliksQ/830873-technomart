@@ -1221,8 +1221,9 @@ padding: 0;
 .service {
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin:0 auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin:0;
   margin-bottom: 75px;
 
 	background-color: #f4f7f9;
@@ -1699,7 +1700,7 @@ padding: 0;
 .bottom-footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin:0 ;
 
   background-color: #293449;
@@ -2584,7 +2585,7 @@ padding: 0;
   text-transform: none;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 65px;
 
   background-color: #f2f6f8;
