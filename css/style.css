@@ -50,6 +50,7 @@ a {
 
 .container-and-logo {
   width: 100%;
+  min-height: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
